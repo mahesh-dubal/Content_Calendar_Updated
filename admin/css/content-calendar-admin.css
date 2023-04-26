@@ -1,0 +1,111 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ body {
+    box-sizing: border-box;
+}
+
+.heading {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    /* flex-flow: row wrap; */
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+label,
+input,
+select {
+    margin: 1rem 2px;
+    padding: 1rem;  
+}
+
+
+label {
+    display: inline-block;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: large;
+    width: 150px;
+    text-align: right;
+}
+
+input,
+select {
+    width: 400px;
+    height:3rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+   
+}
+
+#submit {
+    border-radius: 5px;
+    width: 150px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+}
+#data_table {
+    border: 2px solid black;
+    text-align: center;
+    width: 90%;
+}
+
+
+
+#data_table th {
+    background-color: grey;
+    color: black;
+    border: 1px solid black;
+}
+
+#data_table th,
+#data_table td {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    border: 1px solid black;
+}
+
+#data_table tr {
+    border-bottom: 1px solid #222;
+}
+
+  
+/* Responsiveness */
+
+@media screen and (max-width: 768px) {
+    
+    body{
+        overflow: scroll;
+    }
+
+    form {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+  
+    label, input, select {
+      width: 90%;
+    }
+
+    label {
+      text-align: left;
+    }
+    
+  }
